@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Sorteador</title>
+</head>
+<body>
+  <header>
+    <img src="assets/image/logo.svg" alt="logo">
+  </header>
+
+  <main>
+    <div class="container-row">
+      <section id="left">
+        <div class="left-top">
+          <span>ONLINE - GRATUITO</span>
+          <h1>SORTEADOR DE NÚMEROS</h1>
+        </div>
+        <div class="left-botton">
+          <div class="doubts">
+            <div class="doubts-title">
+              <img src="assets/image/doubts.svg" alt="">
+              <span>Como funciona o sorteador de números?</span>
+            </div>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+
+          <div class="doubts">
+            <div class="doubts-title">
+              <img src="assets/image/doubts.svg" alt="">
+              <span>Posso escolher o intervalo dos números?</span>
+            </div>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="right" class="sort-start">
+        <div class="right-wrap">
+          <h3>QUERO SORTEAR:</h3>
+          <p>
+            defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+          </p>
+
+          <form action="">
+            <div class="n1">
+              <label for="nome">NÚMEROS</label>
+              <input type="number" id="n1" name="n1">
+            </div>
+            <div class="n2">
+              <label for="nome">DE</label>
+              <input type="number" id="n2" name="n2">
+            </div>
+            <div class="n3">
+              <label for="nome">DE</label>
+              <input type="number" id="n3" name="n3">
+            </div>
+          </div><!-- conter -->
+
+          <div class="check">
+            <input type="checkbox">
+            <label for="repeat">Não repetir número</label>
+          </div>
+
+          <button type="submit" class="btn">
+            SORTEAR ➡️
+          </button>
+        </form>
+      </section>
+
+      <section id="right" class="sort-end display-none">
+        <div class="right-wrap">
+          <h3>RESULTADO DO SORTEIO:</h3>
+          <p>
+            1º RESULTADO
+          </p>
+
+            <div class="result-wrap">
+              <!--
+                <div class="result">23</div>
+              -->
+            </div>
+        </div><!-- conter -->
+
+          <button class="btn-again">
+            SORTEAR NOVAMENTE ➡️
+          </button>
+      </section>
+
+      <section id="right"></section>
+    </div>
+  </main>
+</body>
+<script src="assets/script.js"></script>
+</html>
